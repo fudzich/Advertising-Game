@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - item
+  - milk
+  - fish
+  - meat
+  - cooked
+  - veges
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ public class DestroyItems : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("item"))
+        if (other.CompareTag("milk") || other.CompareTag("fish") || other.CompareTag("meat") || other.CompareTag("cooked") || other.CompareTag("veges"))
         {
             Destroy(other.gameObject);
         }
