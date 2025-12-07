@@ -9,6 +9,18 @@ public class FinalScoreManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI categoryText;
     [SerializeField] private TextMeshProUGUI percentText;
 
+    [Header("QR Images")]
+    [SerializeField]
+    GameObject cookQR;
+    [SerializeField]
+    GameObject fishQR;
+    [SerializeField]
+    GameObject meatQR;
+    [SerializeField]
+    GameObject milkQR;
+    [SerializeField]
+    GameObject vegeQR;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,23 +71,28 @@ public class FinalScoreManager : MonoBehaviour
 
     private string HighestCategoryScore(){
         string answer = "Рыба и Морепродукты";
-        int maxValue = DataHolder.fishPoints;  
+        int maxValue = DataHolder.fishPoints;
+        fishQR.SetActive(true);  
 
         if(maxValue < DataHolder.meatPoints){
             answer = "Мясо, Птица, Колбасы";
-            maxValue = DataHolder.meatPoints; 
+            maxValue = DataHolder.meatPoints;
+            meatQR.SetActive(true); 
         }
         if(maxValue < DataHolder.vegesPoints){
             answer = "Овощи, Фрукты, Орехи";
-            maxValue = DataHolder.vegesPoints; 
+            maxValue = DataHolder.vegesPoints;
+            vegeQR.SetActive(true); 
         }
         if(maxValue < DataHolder.cookedPoints){
             answer = "Готовая Еда";
-            maxValue = DataHolder.cookedPoints; 
+            maxValue = DataHolder.cookedPoints;
+            cookQR.SetActive(true); 
         }
         if(maxValue < DataHolder.milkPoints){
             answer = "Молочная Продукция";
-            maxValue = DataHolder.milkPoints; 
+            maxValue = DataHolder.milkPoints;
+            milkQR.SetActive(true); 
         }
 
         return answer;
