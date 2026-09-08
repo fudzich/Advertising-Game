@@ -1,4 +1,4 @@
-ENG:
+**ENG:**
 
 A game made for a student hackathon. Project on the topic: “Creating a game for a brand application/website.” Game genre: Arcade. Developed in 24 hours.
 The game was made for Russian chain of convenience stores "Pyaterochka".
@@ -9,7 +9,7 @@ Achievements:
 - Added reward variability to encourage replayability 
 - Limited gaming sessions to 1 minute to keep players' attention longer
 
-RU:
+**RU:**
 
 Игра сделанная для студенческого хакатона. Проект на тему: “Создание игры для приложения/сайта бренда”. Жанр игры: Аркада. Разработана за 24 часа.
 Выбранный бренд: "Пятёрочка".
